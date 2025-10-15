@@ -65,10 +65,10 @@ resource "aws_security_group" "ec2_sg" {
 
 # Instancias EC2 por subnet
 resource "aws_instance" "ec2_subnet_a_1" {
-  ami           = "ami-052064a798f08f0d3"
-  instance_type = "t3.micro"
-  subnet_id     = aws_subnet.subnet_a.id
-  security_groups = [aws_security_group.ec2_sg.name]
+  ami                    = "ami-052064a798f08f0d3"
+  instance_type          = "t3.micro"
+  subnet_id              = aws_subnet.subnet_a.id
+  vpc_security_group_ids = [aws_security_group.ec2_sg.id]
 
   tags = {
     Name = "EC2-SubnetA-1"
@@ -76,10 +76,10 @@ resource "aws_instance" "ec2_subnet_a_1" {
 }
 
 resource "aws_instance" "ec2_subnet_a_2" {
-  ami           = "ami-052064a798f08f0d3"
-  instance_type = "t3.micro"
-  subnet_id     = aws_subnet.subnet_a.id
-  security_groups = [aws_security_group.ec2_sg.name]
+  ami                    = "ami-052064a798f08f0d3"
+  instance_type          = "t3.micro"
+  subnet_id              = aws_subnet.subnet_a.id
+  vpc_security_group_ids = [aws_security_group.ec2_sg.id]
 
   tags = {
     Name = "EC2-SubnetA-2"
@@ -87,10 +87,10 @@ resource "aws_instance" "ec2_subnet_a_2" {
 }
 
 resource "aws_instance" "ec2_subnet_b_1" {
-  ami           = "ami-052064a798f08f0d3"
-  instance_type = "t3.micro"
-  subnet_id     = aws_subnet.subnet_b.id
-  security_groups = [aws_security_group.ec2_sg.name]
+  ami                    = "ami-052064a798f08f0d3"
+  instance_type          = "t3.micro"
+  subnet_id              = aws_subnet.subnet_b.id
+  vpc_security_group_ids = [aws_security_group.ec2_sg.id]
 
   tags = {
     Name = "EC2-SubnetB-1"
@@ -98,10 +98,10 @@ resource "aws_instance" "ec2_subnet_b_1" {
 }
 
 resource "aws_instance" "ec2_subnet_b_2" {
-  ami           = "ami-052064a798f08f0d3"
-  instance_type = "t3.micro"
-  subnet_id     = aws_subnet.subnet_b.id
-  security_groups = [aws_security_group.ec2_sg.name]
+  ami                    = "ami-052064a798f08f0d3"
+  instance_type          = "t3.micro"
+  subnet_id              = aws_subnet.subnet_b.id
+  vpc_security_group_ids = [aws_security_group.ec2_sg.id]
 
   tags = {
     Name = "EC2-SubnetB-2"
@@ -109,10 +109,10 @@ resource "aws_instance" "ec2_subnet_b_2" {
 }
 
 resource "aws_instance" "ec2_subnet_c_1" {
-  ami           = "ami-052064a798f08f0d3"
-  instance_type = "t3.micro"
-  subnet_id     = aws_subnet.subnet_c.id
-  security_groups = [aws_security_group.ec2_sg.name]
+  ami                    = "ami-052064a798f08f0d3"
+  instance_type          = "t3.micro"
+  subnet_id              = aws_subnet.subnet_c.id
+  vpc_security_group_ids = [aws_security_group.ec2_sg.id]
 
   tags = {
     Name = "EC2-SubnetC-1"
@@ -120,10 +120,10 @@ resource "aws_instance" "ec2_subnet_c_1" {
 }
 
 resource "aws_instance" "ec2_subnet_c_2" {
-  ami           = "ami-052064a798f08f0d3"
-  instance_type = "t3.micro"
-  subnet_id     = aws_subnet.subnet_c.id
-  security_groups = [aws_security_group.ec2_sg.name]
+  ami                    = "ami-052064a798f08f0d3"
+  instance_type          = "t3.micro"
+  subnet_id              = aws_subnet.subnet_c.id
+  vpc_security_group_ids = [aws_security_group.ec2_sg.id]
 
   tags = {
     Name = "EC2-SubnetC-2"
